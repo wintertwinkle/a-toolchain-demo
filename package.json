@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "tape tests/*.js",
     "dev": "npx parcel src/index.html --open --lazy",
     "build": "parcel build src/index.html"
   },
@@ -11,13 +11,15 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "axios": "^0.26.1",
     "babel-eslint": "^10.1.0",
     "eslint": "^8.11.0",
     "eslint-plugin-react": "^7.29.3",
     "parcel": "^2.3.2",
     "postcss": "^8.4.8",
     "postcss-preset-env": "^7.4.2",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "tape": "^5.5.2"
   },
   "dependencies": {
     "date-fns": "^2.28.0",
